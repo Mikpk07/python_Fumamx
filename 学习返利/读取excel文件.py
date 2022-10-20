@@ -8,12 +8,12 @@
 #######################################################
 import xlrd
 #打开一个workbook
-workbook = xlrd.open_workbook('D:\\工作文档\\扬子江\\数据表格模板\\TEST\\最新流向.xlsx')
+workbook = xlrd.open_workbook('D:\\360极速浏览器X下载\\销售订单数据导出20221019212952.xlsx')
 #抓取所有sheet页的名称
 worksheets = workbook.sheet_names()
 print('worksheets is %s' %worksheets)
 #定位到sheet1
-worksheet1 = workbook.sheet_by_name('Sheet1')
+worksheet1 = workbook.sheet_by_name('商品清单')
 """
 #通过索引顺序获取
 worksheet1 = workbook.sheets()[0]
