@@ -9,7 +9,7 @@ conn = mysql.connector.connect(
     # 密码
     , port=3306
     # 端口，默认为3306
-    , db='text_MX'
+    , db='test_mx'
     # 数据库名称
     , charset='utf8'
     # 字符编码
@@ -21,4 +21,5 @@ data = cur.fetchall()  # 通过fetchall方法获得数据
 for i in data[:10]:  # 打印输出前2条数据
     print(i)
 cur.close()  # 关闭游标
+print("SUCCESSS")
 conn.close()  # 关闭连接

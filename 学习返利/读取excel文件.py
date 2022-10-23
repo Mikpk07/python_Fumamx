@@ -13,7 +13,7 @@ workbook = xlrd.open_workbook('D:\\360极速浏览器X下载\\销售订单数据
 worksheets = workbook.sheet_names()
 print('worksheets is %s' %worksheets)
 #定位到sheet1
-worksheet1 = workbook.sheet_by_name('商品清单')
+worksheet1 = workbook.sheet_by_name('测试列表')
 """
 #通过索引顺序获取
 worksheet1 = workbook.sheets()[0]
